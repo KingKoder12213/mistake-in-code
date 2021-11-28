@@ -7,7 +7,7 @@ var engine, world;
 var canvas;
 var palyer, playerBase, playerArcher;
 var playerArrows = [];
-
+var baseimage, playerimage,arrow
 
 function preload() {
   backgroundImg = loadImage("./assets/background.png");
@@ -39,6 +39,9 @@ function setup() {
     120,
     120
   );
+    arrow = new PlayerArrow(playerArcher.body.position.x,playerArcher.body.position.y,100,10)
+
+
 }
 
 function draw() {
